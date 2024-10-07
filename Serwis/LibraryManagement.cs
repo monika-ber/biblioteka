@@ -129,7 +129,7 @@ namespace Library
         /// </summary>
         public void DisplayAllMedia()
         {
-            if (library.Media.Count > 0) 
+            if (library.Media.Count > 0)
             {
                 foreach (var item in library.Media)
                 {

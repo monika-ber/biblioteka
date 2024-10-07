@@ -82,16 +82,9 @@ namespace Library
                     isValid = ValidateTitle(input);
                     return isValid;
                 case "Date":
-                    DateTime dt;
-                    isValid = ValidateDate(input, out dt);
-                    if (dt == DateTime.Now)
-                    {
-                        return false;
-                    } 
-                    else 
-                    {
-                        return isValid;
-                    }
+                    DateTime dateOfBirth;
+                    isValid = ValidateDate(input, out dateOfBirth);
+                    return isValid;
                 default: 
                     Console.WriteLine("Incorrect parameter name");
                     break;
