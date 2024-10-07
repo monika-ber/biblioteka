@@ -55,7 +55,7 @@ namespace Library
                         library.DeleteUser(userID);
                         break;
                     case 5:
-                        Console.WriteLine("List of all books");
+                        Console.WriteLine("List of all media in the library");
                         library.DisplayAllMedia();
                         break;
                     case 6:
@@ -115,7 +115,7 @@ namespace Library
         /// Create an object of Book type or Film type
         /// </summary>
         /// <param name="input">string with value 1 or 2</param>
-        /// <returns></returns>
+        /// <returns>Book or Film object type</returns>
         static Medium? CreateMediumObject(string input)
         {
             Enum typ = (Type)Enum.Parse(typeof(Type), input);
@@ -135,7 +135,7 @@ namespace Library
         /// <summary>
         /// Wait until user inputs correct intereger value
         /// </summary>
-        /// <param name="input"></param>
+        /// <param name="input">User input</param>
         static void ReadUserInput(out int input)
         {
             while(!int.TryParse(Console.ReadLine(), out input) && input < 0)
@@ -149,7 +149,7 @@ namespace Library
         /// </summary>
         /// <param name="input">User input</param>
         /// <param name="parameter">Type of input</param>
-        /// <returns></returns>
+        /// <returns>User input when it's in correct form</returns>
         static string? ReadUserInput(string? input, string parameter)
         {
             while(!InputValidator.IsValidInput(input, parameter))
