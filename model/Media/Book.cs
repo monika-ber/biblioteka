@@ -19,7 +19,7 @@ namespace Library
             return ISBN;
         }
 
-        public override void setAuthor(string? author)
+        public override void SetAuthor(string? author)
         {
             Author = author;
         }

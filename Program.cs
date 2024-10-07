@@ -30,7 +30,7 @@ namespace Library
                         ReadUserInput(out int year);
                         medium.YearOfPublication = year;
                         Console.WriteLine("Please input an author of added medium");
-                        medium.setAuthor(ReadUserInput(Console.ReadLine(), "Surname"));
+                        medium.SetAuthor(ReadUserInput(Console.ReadLine(), "Surname"));
                         library.AddMedium(medium);
                         Console.WriteLine("Medium was added.");
                         break;

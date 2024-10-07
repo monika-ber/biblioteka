@@ -1,6 +1,6 @@
 namespace Library
 {
-    abstract class Medium
+    abstract class Medium : IMedium
     {
         public string? Title { get; set; }
         public int YearOfPublication { get; set; }
@@ -14,6 +14,6 @@ namespace Library
             IsBorrowed = false;
         }
         public abstract int GetID();
-        public abstract void setAuthor(string? author);
+        public abstract void SetAuthor(string? author);
     }
 }

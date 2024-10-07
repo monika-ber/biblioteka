@@ -19,7 +19,7 @@ namespace Library
             return filmID;
         }
 
-        public override void setAuthor(string? author)
+        public override void SetAuthor(string? author)
         {
             Director = author;
         }
