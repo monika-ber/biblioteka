@@ -11,7 +11,7 @@ namespace Library
             library.CreateMedia();
             library.CreateUsers();
             
-            Console.WriteLine("Welcome to the library management system. !!!");
+            Console.WriteLine("Welcome to the library management system.");
             DisplayInstructions();
             ReadUserInput(out int userInput);
 
