@@ -107,7 +107,7 @@ namespace Library
                                                 u.DateOfBirth == user.DateOfBirth);
             if (u != default)
             {
-                Console.WriteLine("User with the same data already exists");
+                Console.WriteLine("User with the same data already exists !!!");
                 return true;
             }
             return false;
